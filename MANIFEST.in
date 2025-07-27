@@ -1,0 +1,27 @@
+include README.md
+include LICENSE
+include requirements.txt
+include pyproject.toml
+include setup.py
+include build.py
+
+# Include Cython source files
+recursive-include src *.pyx
+recursive-include src *.pxd
+
+# Include C files generated from Cython (if any)
+recursive-include src *.c
+
+# Include Python files
+recursive-include src *.py
+
+# Include test files
+recursive-include tests *.py
+
+# Exclude compiled files and cache
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude *.so
+global-exclude *.pyd
+global-exclude build
+global-exclude dist

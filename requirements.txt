@@ -1,0 +1,11 @@
+# Core dependencies for cython-image-processing
+numpy>=1.20.0
+cython>=0.29.0
+
+# Development dependencies
+pytest>=6.0.0
+pytest-cov>=2.10.0
+
+# Optional dependencies for development
+pre-commit>=2.15.0
+vulture>=2.3.0
